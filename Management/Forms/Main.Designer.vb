@@ -22,10 +22,32 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.Management = New Management.UbuntuTheme()
+        Me.SuspendLayout()
+        '
+        'Management
+        '
+        Me.Management.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.Management.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Management.Location = New System.Drawing.Point(0, 0)
+        Me.Management.Name = "Management"
+        Me.Management.Size = New System.Drawing.Size(800, 450)
+        Me.Management.TabIndex = 0
+        Me.Management.Text = "Management"
+        '
+        'Main
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Management)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "Main"
         Me.Text = "Main"
+        Me.TransparencyKey = System.Drawing.Color.Fuchsia
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents Management As UbuntuTheme
 End Class
